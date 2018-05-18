@@ -1,0 +1,20 @@
+#stack {
+  background-color: black;
+  height: 551px;
+  width: 250px;
+  position: absolute;
+  bottom:0px;
+  right:50%;
+}
+
+
+
+#block {
+  background-color: black;
+  height: 20px;
+  width: 250px;
+  position: absolute;
+  top: 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
