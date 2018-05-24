@@ -4,7 +4,8 @@ $(() =>{
   const $stopButton = $('#stop');
   let intervalId;
   let $block;
-  let lastBlock;
+  let lastBlock
+
 
   function getLatestBlock() {
     $block = $('.block');
@@ -17,7 +18,6 @@ $(() =>{
     const blockWidth = $block.width();
     lastBlock = $('.oldBlock').last();
     intervalId = setInterval(function(){
-      console.log('test');
       if(direction){
         if($block.position().left + blockWidth > windowWidth) direction = false;
         $block.css('left', '+=10px');
@@ -37,16 +37,23 @@ $(() =>{
     // to work out px to subtract from new block block width
     const widthChange = Math.abs(lastBlock.offset().left - $('.oldBlock').last().offset().left);
     console.log(widthChange, lastBlock.width());
+
+
+
+
     // newBlock width = newBlock width - overlap px
 
 
     //newBlock();
     const newBlock = document.createElement('div');
-    $(newBlock).addClass('block').width(lastBlock.width() - widthChange).offset({top: lastBlock.offset().top - 21});
+    $(newBlock).addClass('block').width(lastBlock.width() - widthChange).offset({top: $block.offset().top - 21});
+
+
 
     $('body').append(newBlock);
     // console.log($(newBlock).width());
     animateBlock();
+
   });
 
   animateBlock();
