@@ -30,15 +30,18 @@ The application should:
 Game start:
 
 <img width="1383" alt="Landing page" src="https://i.imgur.com/MVjgOg4.png">
+
 ###### The game starts with one block that the user drops by pressing the spacebar. 
 
 In-game:
 
 <img width="1217" alt="Homepage" src="https://i.imgur.com/TVGclIl.png">
+
 ###### A new bloack that animates continuously from the left to right of the screen is introduced each time the user drops the current block. The user must try and drop this block on top of the stack. If they fail to drop it directly onto the stack, the size of the portion of the block that overlaps the edge of the stack is removed from the blocks width and subsequently the next block inherits this size.
 
 Game over:
 <img width="1217" alt="Registration page" src="https://i.imgur.com/uOmBAuH.png">
+
 ###### As the blocks become smaller it becomes trickier to drop them on the stack, until inevitably the user misses the stack completely, resulting in the end of the game.
 
 ---
